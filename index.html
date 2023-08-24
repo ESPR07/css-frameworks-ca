@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Splash Login</title>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>Splashy Login</title>
 </head>
 <body class="log-in-bg vh-100 d-flex justify-content-center">
     <div class="container col-11 m-auto h-50 d-flex flex-column justify-content-center">
         <div class="log-in-text d-flex flex-column align-items-center">
-            <h1 class="log-in-logo">Splash</h1>
+            <h1 class="log-in-logo">Splashy</h1>
             <p class="log-in-greeting">Start your journey here</p>
         </div>
-        <form class="log-in-form">
-            <label for="log-in-email" class="form-label">Email:</label>
-            <input type="email" class="form-control" id="log-in-email">
-            <label for="log-in-password" class="form-label">Password:</label>
-            <input type="text" class="form-control" id="log-in-password">
-            <div class="container-fluid px-0 pt-3 d-flex justify-content-around buttons">
-                <button class="btn btn-secondary sign-up">Sign Up</button>
-                <button class="btn btn-primary sign-in">Sign In</button>
-            </div>
-        </form>
+        <div class="main-forms d-flex flex-row justify-content-around">
+            <form class="sign-up-form col-4 needs-validation">
+                <label for="sign-up-email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="sign-up-email">
+                <label for="sign-up-password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="sign-up-password">
+                <button class="btn btn-secondary mt-3 sign-up">Sign Up</button>
+            </form>
+            <p class="form-mid-section d-flex align-items-center">OR</p>
+            <form class="log-in-form col-6 needs-validation">
+                <label for="log-in-email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="log-in-email" required>
+                <div class="valid-feedback"></div>
+                <label for="log-in-password" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="log-in-password" required>
+                <button class="btn btn-primary mt-3 sign-in">Sign In</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>

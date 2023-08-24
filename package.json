@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"We will learn more about testing in the Workflow course\" && exit 1",
     "build": "sass src/scss:com/css",
-    "watch": "sass --watch src/scss:com/css"
+    "watch": "sass --watch src/scss:com/css & live-server"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/NoroffFEU/css-frameworks-ca#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "live-server": "^1.2.2"
   },
   "devDependencies": {
     "sass": "^1.66.1"
