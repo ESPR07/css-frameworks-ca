@@ -1,0 +1,33 @@
+@import "_variables.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.bold {
+  font-weight: 900;
+}
+
+.log-in-bg {
+  background-color: $purple-main;
+}
+
+.sign-up-menu {
+  background-color: $teal-dark;
+  border-radius: 20px 0 0 20px;
+}
+
+.log-in-menu {
+  background-color: $teal;
+  border-radius: 0 20px 20px 0;
+}
+
+.log-in-text {
+  color: $purple-dark;
+}
+
+.btn {
+  background-color: $button-bg;
+  width: 100%;
+}
+
+.btn:hover {
+  background-color: $button-bg-hover;
+}

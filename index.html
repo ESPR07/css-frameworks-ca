@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/com/css/index.css" rel="stylesheet" />
     <title>Splashy Login</title>
-</head>
-<body class="log-in-bg vh-100 d-flex justify-content-center">
-    <div class="container col-11 m-auto h-50 d-flex flex-column justify-content-center">
-        <div class="log-in-text d-flex flex-column align-items-center">
-            <h1 class="log-in-logo">Splashy</h1>
-            <p class="log-in-greeting">Start your journey here</p>
-        </div>
-        <div class="main-forms d-flex flex-row justify-content-around">
-            <form class="sign-up-form col-4 needs-validation">
-                <label for="sign-up-email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="sign-up-email">
-                <label for="sign-up-password" class="form-label">Password:</label>
-                <input type="password" class="form-control" id="sign-up-password">
-                <button class="btn btn-secondary mt-3 sign-up">Sign Up</button>
-            </form>
-            <p class="form-mid-section d-flex align-items-center">OR</p>
-            <form class="log-in-form col-6 needs-validation">
-                <label for="log-in-email" class="form-label">Email:</label>
-                <input type="email" class="form-control" id="log-in-email" required>
-                <div class="valid-feedback"></div>
-                <label for="log-in-password" class="form-label">Password:</label>
-                <input type="password" class="form-control" id="log-in-password" required>
-                <button class="btn btn-primary mt-3 sign-in">Sign In</button>
-            </form>
-        </div>
+  </head>
+  <body class="log-in-bg vh-100 d-flex justify-content-center">
+    <div
+      class="sign-up-menu my-auto h-50 col-4 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="log-in-text d-flex flex-column align-items-center">
+        <h1 class="log-in-logo">Splashy</h1>
+        <p class="log-in-greeting">
+          <span class="bold">Start</span> your journey here
+        </p>
+      </div>
+      <form
+        class="sign-up-form d-flex flex-column justify-content-center needs-validation"
+      >
+        <label for="sign-up-email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="sign-up-email" required />
+        <label for="sign-up-password" class="form-label">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="sign-up-password"
+          required
+          minlength="8"
+        />
+        <button class="btn btn-secondary mt-3 sign-up">Sign Up</button>
+      </form>
     </div>
-</body>
+    <div
+      class="log-in-menu my-auto h-50 col-6 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div class="log-in-text d-flex flex-column align-items-center">
+        <h1 class="log-in-logo">Splashy</h1>
+        <p class="log-in-greeting">
+          <span class="bold">Continue</span> your journey here
+        </p>
+      </div>
+      <form class="log-in-form col-6 needs-validation">
+        <label for="log-in-email" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="log-in-email" required />
+        <div class="valid-feedback"></div>
+        <label for="log-in-password" class="form-label">Password:</label>
+        <input
+          type="password"
+          class="form-control"
+          id="log-in-password"
+          required
+          minlength="8"
+        />
+        <button class="btn btn-primary mt-3 sign-in">Sign In</button>
+      </form>
+    </div>
+  </body>
 </html>
