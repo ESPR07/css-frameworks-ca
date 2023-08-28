@@ -1,0 +1,16 @@
+@import "_variables.scss";
+
+.favourite-icon {
+  background-image: url(/images/star.svg);
+}
+
+.post-icon {
+  background-image: url(/images/post-icon.svg);
+}
+
+.icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 2.5rem;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A feed featuring posts from others" />
+    <link href="/com/css/index.css" rel="stylesheet" />
+    <title>Feed Page</title>
+  </head>
+  <body>
+    <nav class="navbar bg-secondary">
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="/index.html" class="navbar-brand text-info fs-1">Splashy</a>
+        <div
+          class="navbar-nav col-sm-2 col-4 d-flex flex-row justify-content-around"
+        >
+          <a href="#" class="nav-link col-6 favourite-icon icon"></a>
+          <a href="#" class="nav-link col-6 post-icon icon"></a>
+        </div>
+      </div>
+    </nav>
+    <section class="container-fluid p-0">
+      <div
+        class="container-fluid bg-primary d-flex justify-content-between py-2 post-maker"
+      >
+        <img src="/images/post-icon.svg" alt="Profile Image" />
+        <form class="needs-validation">
+          <div class="d-flex input-submit">
+            <textarea name="post-text" rows="4" required></textarea>
+            <button class="btn btn-primary">Post</button>
+          </div>
+          <div class="add-elements bg-info">
+            <a href="#" class="">Image</a>
+            <a href="#">Attachment</a>
+          </div>
+        </form>
+      </div>
+      <div class="feed-section bg-light d-flex flex-column align-items-center">
+        <form
+          action=""
+          class="search col-10 d-flex justify-content-center mt-2"
+        >
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search for posts"
+          />
+          <button class="btn btn-secondary">S</button>
+        </form>
+        <div class="post rounded p-2 bg-info col-10 my-2">
+          <div class="user d-flex">
+            <img src="/images/post-icon.svg" />
+            <div class="user-text">
+              <a href="/profile/index.html" class="nav-link text-secondary"
+                >User Name</a
+              >
+              <p class="posted-time text-primary">10.Januar 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

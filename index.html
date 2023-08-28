@@ -4,58 +4,72 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in to your Splashy account" />
     <link href="/com/css/index.css" rel="stylesheet" />
     <title>Splashy Login</title>
   </head>
   <body class="log-in-bg vh-100 d-flex justify-content-center">
     <div
-      class="sign-up-menu my-auto h-50 col-4 d-flex flex-column align-items-center justify-content-center"
+      class="container-sm m-auto d-flex flex-sm-row flex-column justify-content-center"
     >
-      <div class="log-in-text d-flex flex-column align-items-center">
-        <h1 class="log-in-logo">Splashy</h1>
-        <p class="log-in-greeting">
-          <span class="bold">Start</span> your journey here
-        </p>
-      </div>
-      <form
-        class="sign-up-form d-flex flex-column justify-content-center needs-validation"
+      <div
+        class="sign-up-menu p-3 col-sm-4 col-12 d-flex flex-column align-items-center justify-content-center"
       >
-        <label for="sign-up-email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="sign-up-email" required />
-        <label for="sign-up-password" class="form-label">Password:</label>
-        <input
-          type="password"
-          class="form-control"
-          id="sign-up-password"
-          required
-          minlength="8"
-        />
-        <button class="btn btn-secondary mt-3 sign-up">Sign Up</button>
-      </form>
-    </div>
-    <div
-      class="log-in-menu my-auto h-50 col-6 d-flex flex-column align-items-center justify-content-center"
-    >
-      <div class="log-in-text d-flex flex-column align-items-center">
-        <h1 class="log-in-logo">Splashy</h1>
-        <p class="log-in-greeting">
-          <span class="bold">Continue</span> your journey here
-        </p>
+        <div class="log-in-text d-flex flex-column align-items-center">
+          <h1 class="log-in-logo">Splashy</h1>
+          <p class="log-in-greeting">
+            <span class="bold">Start</span> your journey here
+          </p>
+        </div>
+        <form
+          class="sign-up-form d-flex flex-column justify-content-center needs-validation"
+          action="/profile/index.html"
+        >
+          <label for="sign-up-email" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="sign-up-email"
+            required
+          />
+          <label for="sign-up-password" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="sign-up-password"
+            required
+            minlength="8"
+          />
+          <button class="btn btn-secondary mt-3 sign-up">Sign Up</button>
+        </form>
       </div>
-      <form class="log-in-form col-6 needs-validation">
-        <label for="log-in-email" class="form-label">Email:</label>
-        <input type="email" class="form-control" id="log-in-email" required />
-        <div class="valid-feedback"></div>
-        <label for="log-in-password" class="form-label">Password:</label>
-        <input
-          type="password"
-          class="form-control"
-          id="log-in-password"
-          required
-          minlength="8"
-        />
-        <button class="btn btn-primary mt-3 sign-in">Sign In</button>
-      </form>
+      <div
+        class="log-in-menu p-3 col-sm-6 col-12 d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="log-in-text d-flex flex-column align-items-center">
+          <h1 class="log-in-logo">Splashy</h1>
+          <p class="log-in-greeting">
+            <span class="bold">Continue</span> your journey here
+          </p>
+        </div>
+        <form
+          class="log-in-form d-flex flex-column justify-content-center needs-validation"
+          action="/profile/index.html"
+        >
+          <label for="log-in-email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="log-in-email" required />
+          <div class="valid-feedback"></div>
+          <label for="log-in-password" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="log-in-password"
+            required
+            minlength="8"
+          />
+          <button class="btn btn-primary mt-3 sign-in">Sign In</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
