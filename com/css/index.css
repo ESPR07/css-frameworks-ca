@@ -10751,4 +10751,22 @@ textarea.form-control-lg {
   background-color: #ff82ac;
 }
 
+.profile-image {
+  background-image: url(/images/selfie.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vw;
+  width: 20vw;
+}
+
+.user-image {
+  background-image: url(/images/profile-image.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 5vw;
+  width: 5vw;
+}
+
 /*# sourceMappingURL=index.css.map */
