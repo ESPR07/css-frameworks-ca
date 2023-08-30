@@ -15,7 +15,7 @@
           class="navbar-nav col-sm-2 col-4 d-flex flex-row justify-content-around"
         >
           <a href="#" class="nav-link col-6 favourite-icon icon"></a>
-          <a href="#" class="nav-link col-6 post-icon icon"></a>
+          <a href="/feed/index.html" class="nav-link col-6 post-icon icon"></a>
         </div>
       </div>
     </nav>
@@ -32,9 +32,11 @@
             class="text-info link-info text-decoration-none fs-2 d-md-inline d-none text-center"
             >User Name</a
           >
-          <button class="btn text-white mt-2 mb-5 d-sm-inline d-none">
-            Profile
-          </button>
+          <form action="/profile/index.html">
+            <button class="btn text-white mt-2 mb-5 d-sm-inline d-none w-100">
+              Profile
+            </button>
+          </form>
           <div
             class="followers-section d-flex justify-content-around mb-5 d-sm-flex d-none"
           >
@@ -42,7 +44,7 @@
               <p class="text-info bold">Followers:</p>
               <p class="text-info bold">2000</p>
             </div>
-            <div class="split border"></div>
+            <div class="border"></div>
             <div class="following d-flex flex-column align-items-center">
               <p class="text-info bold">Following:</p>
               <p class="text-info bold">20000</p>
