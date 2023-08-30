@@ -6,24 +6,6 @@
   font-weight: 900;
 }
 
-.log-in-bg {
-  background-color: $primary;
-}
-
-.sign-up-menu {
-  background-color: $info-dark;
-  // border-radius: 20px 0 0 20px;
-}
-
-.log-in-menu {
-  background-color: $info;
-  // border-radius: 0 20px 20px 0;
-}
-
-.log-in-text {
-  color: $secondary;
-}
-
 .btn {
   background-color: $button-bg;
 }
@@ -32,33 +14,32 @@
   background-color: $button-bg-hover;
 }
 
-.profile-image {
-  background-image: url(/images/selfie.jpg);
+.profile-image,
+.user-image,
+.user-image-1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.user-image,
+.user-image-1 {
+  height: 5vw;
+  width: 5vw;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.profile-image {
+  background-image: url(/images/selfie.jpg);
   height: 20vw;
   width: 20vw;
 }
 
 .user-image {
   background-image: url(/images/profile-image.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 5vw;
-  width: 5vw;
-  min-width: 50px;
-  min-height: 50px;
 }
 
 .user-image-1 {
   background-image: url(/images/selfie.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 5vw;
-  width: 5vw;
-  min-width: 50px;
-  min-height: 50px;
 }
