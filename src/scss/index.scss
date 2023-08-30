@@ -14,16 +14,13 @@
   background-color: $button-bg-hover;
 }
 
-.profile-image,
-.user-image,
-.user-image-1 {
+.center-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.user-image,
-.user-image-1 {
+.feed-image {
   height: 5vw;
   width: 5vw;
   min-width: 50px;
@@ -34,12 +31,15 @@
   background-image: url(/images/selfie.jpg);
   height: 20vw;
   width: 20vw;
+  @extend .center-image;
 }
 
 .user-image {
   background-image: url(/images/profile-image.jpeg);
+  @extend .center-image, .feed-image;
 }
 
 .user-image-1 {
   background-image: url(/images/selfie.jpg);
+  @extend .center-image, .feed-image;
 }

@@ -10735,16 +10735,13 @@ textarea.form-control-lg {
   background-color: #ff82ac;
 }
 
-.profile-image,
-.user-image,
-.user-image-1 {
+.center-image, .user-image-1, .user-image, .profile-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.user-image,
-.user-image-1 {
+.feed-image, .user-image-1, .user-image {
   height: 5vw;
   width: 5vw;
   min-width: 50px;
