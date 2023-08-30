@@ -23,15 +23,31 @@
       class="container-fluid p-0 d-flex flex-md-row flex-column min-vh-100"
     >
       <div
-        class="container-fluid bg-primary d-flex flex-md-column flex-row align-items-center py-2 post-maker"
+        class="container-fluid bg-primary d-flex flex-md-column flex-row align-items-center py-2 ms-0 col-md-3 col-12 post-maker"
       >
-        <div class="profile-image-container d-flex flex-column">
+        <div class="profile-container d-flex flex-column">
           <div class="profile-image rounded-circle d-flex me-2 mb-3"></div>
           <a
             href="/profile/index.html"
             class="text-info link-info text-decoration-none fs-2 d-md-inline d-none text-center"
             >User Name</a
           >
+          <button class="btn text-white mt-2 mb-5 d-sm-inline d-none">
+            Profile
+          </button>
+          <div
+            class="followers-section d-flex justify-content-around mb-5 d-sm-flex d-none"
+          >
+            <div class="followers d-flex flex-column align-items-center">
+              <p class="text-info bold">Followers:</p>
+              <p class="text-info bold">2000</p>
+            </div>
+            <div class="split border"></div>
+            <div class="following d-flex flex-column align-items-center">
+              <p class="text-info bold">Following:</p>
+              <p class="text-info bold">20000</p>
+            </div>
+          </div>
         </div>
         <form class="needs-validation w-100">
           <div class="d-flex input-submit">
@@ -44,16 +60,14 @@
             <button class="btn btn-primary">Post</button>
           </div>
           <div
-            class="add-elements container-fluid d-flex bg-info rounded-bottom"
+            class="add-elements container-fluid d-flex bg-info rounded-bottom p-"
           >
-            <a href="#" class="nav-link">Image</a>
-            <a href="#" class="nav-link ms-2">Attachment</a>
+            <a href="#" class="link-dark">Image</a>
+            <a href="#" class="link-dark ms-2">Attachment</a>
           </div>
         </form>
       </div>
-      <div
-        class="feed-section bg-light d-flex flex-column col-md-8 align-items-center"
-      >
+      <div class="feed-section bg-light d-flex flex-column align-items-center">
         <form
           action=""
           class="search col-10 d-flex justify-content-center mt-2"
@@ -68,7 +82,7 @@
         <div class="post-1 rounded p-2 bg-info col-11 my-2">
           <div class="user d-flex flex-column">
             <div class="user d-flex">
-              <div class="user-image rounded-circle me-2 mb-2"></div>
+              <div class="user-image-1 rounded-circle me-2 mb-2"></div>
               <div class="user-text">
                 <a href="/profile/index.html" class="nav-link text-secondary"
                   >User Name</a
@@ -83,8 +97,8 @@
               </p>
             </div>
             <div class="user-interaction d-flex justify-content-end">
-              <a href="#" class="nav-link me-2">Comm</a>
-              <a href="#" class="nav-link">Like</a>
+              <a href="#" class="link-dark me-2">Comment</a>
+              <a href="#" class="link-dark">Like</a>
             </div>
           </div>
         </div>
@@ -107,8 +121,8 @@
               />
             </div>
             <div class="user-interaction d-flex justify-content-end mt-3">
-              <a href="#" class="nav-link me-2">Comm</a>
-              <a href="#" class="nav-link">Like</a>
+              <a href="#" class="link-dark me-2">Comment</a>
+              <a href="#" class="link-dark">Like</a>
             </div>
           </div>
         </div>
@@ -130,8 +144,8 @@
               </p>
             </div>
             <div class="user-interaction d-flex justify-content-end">
-              <a href="#" class="nav-link me-2">Comm</a>
-              <a href="#" class="nav-link">Like</a>
+              <a href="#" class="link-dark me-2">Comment</a>
+              <a href="#" class="link-dark">Like</a>
             </div>
           </div>
         </div>

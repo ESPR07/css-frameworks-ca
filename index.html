@@ -10,10 +10,10 @@
   </head>
   <body class="log-in-bg vh-100 d-flex justify-content-center">
     <div
-      class="container-sm m-auto d-flex flex-sm-row flex-column justify-content-center"
+      class="container-md m-auto d-flex flex-md-row flex-column justify-content-center"
     >
       <div
-        class="sign-up-menu p-3 col-sm-4 col-12 d-flex flex-column align-items-center justify-content-center"
+        class="sign-up-menu p-3 col-md-4 col-12 d-md-flex d-none flex-column align-items-center justify-content-center"
       >
         <div class="log-in-text d-flex flex-column align-items-center">
           <h1 class="log-in-logo">Splashy</h1>
@@ -44,11 +44,11 @@
         </form>
       </div>
       <div
-        class="log-in-menu p-3 col-sm-6 col-12 d-flex flex-column align-items-center justify-content-center"
+        class="log-in-menu p-3 col-md-6 col-12 d-flex flex-column align-items-center justify-content-center"
       >
         <div class="log-in-text d-flex flex-column align-items-center">
           <h1 class="log-in-logo">Splashy</h1>
-          <p class="log-in-greeting">
+          <p class="log-in-greeting d-md-inline d-none">
             <span class="bold">Continue</span> your journey here
           </p>
         </div>
@@ -69,6 +69,9 @@
           />
           <button class="btn btn-primary mt-3 sign-in">Sign In</button>
         </form>
+        <a href="#" class="mt-3 d-md-none d-inline"
+          >Don't have an account? Click Here</a
+        >
       </div>
     </div>
   </body>
