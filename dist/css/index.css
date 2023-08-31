@@ -11787,6 +11787,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: "splashy";
+  src: url(/src/scss/fonts/IrishGrover-Regular.ttf);
+}
+@font-face {
+  font-family: "main";
+  src: url(/src/scss/fonts/OpenSans_Condensed-Regular.ttf);
+}
+.html {
+  font-family: "open sanse", "Courier New", Courier, monospace;
+}
+
+.logo {
+  font-family: "splashy", "Courier New", Courier, monospace;
+}
+
 .bold {
   font-weight: 900;
 }
@@ -11802,7 +11818,7 @@ textarea.form-control-lg {
 .center-image, .user-image-1, .user-image, .profile-image {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .feed-image, .user-image-1, .user-image {
@@ -11824,6 +11840,31 @@ textarea.form-control-lg {
 
 .user-image-1 {
   background-image: url(/images/selfie.jpg);
+}
+
+.submit-icon {
+  background-image: url(/images/submit-icon.svg);
+}
+
+.image-icon {
+  background-image: url(/images/attachment-icon.svg);
+}
+
+.attachment-icon {
+  background-image: url(/images/file-icon.svg);
+}
+
+.add-elements {
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.comment-icon {
+  background-image: url(/images/comment-icon.svg);
+}
+
+.like-icon {
+  background-image: url(/images/like-icon.svg);
 }
 
 /*# sourceMappingURL=index.css.map */
