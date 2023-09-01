@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "description": "CSS Framework Assignment",
   "scripts": {
-    "test": "echo \"We will learn more about testing in the Workflow course\" && exit 1",
     "dev-setup": "npm install bootstrap & npm install -D sass & npm install live-server",
     "build": "sass src/scss:dist/css",
     "watch": "sass --watch src/scss:dist/css & live-server"
