@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in to your Splashy account" />
+    <link href="/dist/css/index.css" rel="stylesheet" />
+    <title>Splashy Login</title>
+  </head>
+  <body class="bg-primary vh-100 d-flex justify-content-center">
+    <div
+      class="container-md m-auto d-flex flex-md-row flex-column justify-content-center"
+    >
+      <div
+        class="bg-dark p-3 col-md-4 col-12 d-md-flex d-none flex-column align-items-center justify-content-center"
+      >
+        <div class="text-secondary d-flex flex-column align-items-center">
+          <h1 class="logo display-2">Splashy</h1>
+          <p class="log-in-greeting">
+            <strong>Start</strong> your journey here
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-info p-5 col-md-6 col-12 d-flex flex-column align-items-center justify-content-center"
+      >
+        <div
+          class="text-secondary d-flex d-md-none flex-column align-items-center"
+        >
+          <h1 class="logo display-2">Splashy</h1>
+          <p class="log-in-greeting d-md-inline d-none">
+            <strong>Continue</strong> your journey here
+          </p>
+        </div>
+        <form
+          class="log-in-form d-flex flex-column justify-content-center needs-validation"
+          action="/profile/index.html"
+        >
+          <label for="log-in-email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="log-in-email" required />
+          <div class="valid-feedback"></div>
+          <label for="log-in-password" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="log-in-password"
+            required
+            minlength="8"
+          />
+          <button class="btn btn-primary mt-3 sign-in">Sign In</button>
+        </form>
+        <a href="#" class="mt-3">Don't have an account? Click Here</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View your profile and posts" />
+    <link href="/dist/css/index.css" rel="stylesheet" />
+    <title>Profile Page</title>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar bg-secondary sticky-top">
+      <div class="container-fluid d-flex justify-content-between">
+        <a href="/index.html" class="navbar-brand text-info fs-1 logo"
+          >Splashy</a
+        >
+        <div
+          class="navbar-nav col-sm-2 col-4 d-flex flex-row justify-content-around"
+        >
+          <a href="#" class="nav-link col-6 favourite-icon icon"></a>
+          <a href="/feed/index.html" class="nav-link col-6 post-icon icon"></a>
+        </div>
+      </div>
+    </nav>
+    <section class="p-0 d-flex flex-md-row flex-column min-vh-100">
+      <div class="row">
+        <div
+          class="container-fluid bg-primary d-flex flex-md-column flex-row align-items-center py-2 ms-0 col-md-3 col-12 post-maker"
+        >
+          <div class="profile d-flex flex-column align-items-center w-100">
+            <div class="profile-image rounded-circle d-flex me-2 mb-3"></div>
+            <a
+              href="/profile/index.html"
+              class="text-info link-info text-decoration-none fs-2 d-md-inline d-none text-center"
+              >User Name</a
+            >
+            <form action="#">
+              <button class="btn text-white mt-2 mb-5">Edit Profile</button>
+            </form>
+            <div
+              class="followers-section d-flex justify-content-around mb-0 mb-md-5 d-sm-flex d-none border-bottom w-100"
+            >
+              <div class="followers d-flex flex-column align-items-center">
+                <p class="text-info bold">Followers:</p>
+                <p class="text-info bold">2000</p>
+              </div>
+              <div class="split border"></div>
+              <div class="following d-flex flex-column align-items-center">
+                <p class="text-info bold">Following:</p>
+                <p class="text-info bold">20000</p>
+              </div>
+            </div>
+            <div class="profile-info w-100">
+              <div class="lives d-flex justify-content-around mb-3">
+                <p class="p-header text-info bold">Lives:</p>
+                <p class="p-content text-info bold">Norway</p>
+              </div>
+              <div class="born d-flex justify-content-around">
+                <p class="p-header text-info bold">Born:</p>
+                <p class="p-content text-info bold">24.10.1996</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="feed-section bg-light d-flex flex-column align-items-center col-md-9 col-12"
+        >
+          <form
+            action=""
+            class="search col-10 d-flex justify-content-center mt-2"
+          >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search for posts"
+            />
+            <button class="btn btn-secondary submit-icon center-image"></button>
+          </form>
+          <div class="post-1 rounded p-2 bg-info col-11 my-2">
+            <div class="user d-flex flex-column">
+              <div class="user d-flex">
+                <div class="user-image-1 rounded-circle me-2 mb-2"></div>
+                <div class="user-text">
+                  <a href="/profile/index.html" class="nav-link text-secondary"
+                    >User Name</a
+                  >
+                  <p class="posted-time text-primary">10.January 2020</p>
+                </div>
+              </div>
+              <div class="user-content mx-5">
+                <p>
+                  nflsnfek lfjske flksflks flskj flksh lgslgkjhsl ghlsngmsng
+                  lishe glkns lghsleihglislngks nlgkn slkn
+                </p>
+              </div>
+              <div class="user-interaction d-flex justify-content-end">
+                <a
+                  href="#"
+                  class="add-elements me-2 comment-icon center-image"
+                ></a>
+                <a href="#" class="add-elements like-icon center-image"></a>
+              </div>
+            </div>
+          </div>
+          <div class="post-2 rounded p-2 bg-info col-11 my-2">
+            <div class="user d-flex flex-column">
+              <div class="user d-flex">
+                <div class="user-image-1 col-2 rounded-circle me-2 mb-2"></div>
+                <div class="user-text">
+                  <a href="/profile/index.html" class="nav-link text-secondary"
+                    >User Name</a
+                  >
+                  <p class="posted-time text-primary">20.November 2022</p>
+                </div>
+              </div>
+              <div class="user-content mx-5">
+                <img
+                  src="/images/profile-image.jpeg"
+                  alt="User Image"
+                  class="img-fluid pb-4"
+                />
+              </div>
+              <div class="user-interaction d-flex justify-content-end">
+                <a
+                  href="#"
+                  class="add-elements me-2 comment-icon center-image"
+                ></a>
+                <a href="#" class="add-elements like-icon center-image"></a>
+              </div>
+            </div>
+          </div>
+          <div class="post-3 rounded p-2 bg-info col-11 my-2">
+            <div class="user d-flex flex-column">
+              <div class="user d-flex">
+                <div class="user-image-1 col-2 rounded-circle me-2 mb-2"></div>
+                <div class="user-text">
+                  <a href="/profile/index.html" class="nav-link text-secondary"
+                    >User Name</a
+                  >
+                  <p class="posted-time text-primary">15. July 2023</p>
+                </div>
+              </div>
+              <div class="user-content mx-5">
+                <p>
+                  nflsnfek lfjske flksflks flskj flksh lgslgkjhsl ghlsngmsng
+                  lishe glkns lghsleihglislngks nlgkn slkn
+                </p>
+              </div>
+              <div class="user-interaction d-flex justify-content-end">
+                <a
+                  href="#"
+                  class="add-elements me-2 comment-icon center-image"
+                ></a>
+                <a href="#" class="add-elements like-icon center-image"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
