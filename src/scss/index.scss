@@ -1,1 +1,79 @@
+@import "_variables.scss";
+@import "_navbar.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+@font-face {
+  font-family: "splashy";
+  src: url(/src/scss/fonts/IrishGrover-Regular.ttf);
+}
+
+.logo {
+  font-family: "splashy", "Courier New", Courier, monospace;
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.btn {
+  background-color: $button-bg;
+}
+
+.btn:hover {
+  background-color: $button-bg-hover;
+}
+
+.center-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.feed-image {
+  height: 5vw;
+  width: 5vw;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.profile-image {
+  background-image: url(/images/selfie.jpg);
+  height: 20vw;
+  width: 20vw;
+  @extend .center-image;
+}
+
+.user-image {
+  background-image: url(/images/profile-image.jpeg);
+  @extend .center-image, .feed-image;
+}
+
+.user-image-1 {
+  background-image: url(/images/selfie.jpg);
+  @extend .center-image, .feed-image;
+}
+
+.submit-icon {
+  background-image: url(/images/submit-icon.svg);
+}
+
+.image-icon {
+  background-image: url(/images/attachment-icon.svg);
+}
+
+.attachment-icon {
+  background-image: url(/images/file-icon.svg);
+}
+
+.add-elements {
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.comment-icon {
+  background-image: url(/images/comment-icon.svg);
+}
+
+.like-icon {
+  background-image: url(/images/like-icon.svg);
+}
